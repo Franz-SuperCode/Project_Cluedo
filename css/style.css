@@ -29,8 +29,12 @@ h1 {
 }
 
 div {
+    border: 35px solid;
+    border-image-width: 2rem;
+    border-image: url("../img/rahmen.png");
+    border-image-slice: 41%;
     text-align: center;
-    border: black outset 5px;
+    /* border: black outset 5px; */
     background-color: #d4a373;
     border-radius: 10px;
     padding: 1rem;
