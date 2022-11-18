@@ -1,3 +1,53 @@
+@font-face {
+    font-family: cinzel_regular;
+    src: url("../fonts/Cinzel-Regular.ttf");
+}
+
+@font-face {
+    font-family: cinzel_bold;
+    src: url("../fonts/Cinzel-Bold.ttf");
+}
+
+body {
+    text-align: center;
+    font-family: cinzel_regular;
+}
+
 img {
+
     width: 30%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+#output {
+    font-size: 2rem;
+    font-family: cinzel_bold;
+}
+
+div {
+    text-align: center;
+    border: black outset 5px;
+    background-color: #d4a373;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+button {
+    border: 1px black solid;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+div p:nth-of-type(1) {
+
+    background-color: #faedcd;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 2rem;
+    margin: 0 auto;
 }

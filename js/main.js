@@ -129,10 +129,18 @@ function revealMystery(object) {
     let newImg = document.createElement("img");
     newImg.src = `${object.suspect.image}`;
     //Bedingung ? true: false
-    //Wenn das <div> ein Kind hat, entferne es. Die "" sind nur Platzhalter
-    divEl.childElementCount > 0 ? divEl.removeChild(divEl.firstElementChild) : "";
+    //Wenn das <div> ein Kind hat, entferne es. Die zweiten "" sind nur Platzhalter
+    divEl.childElementCount > 0 ? divEl.innerHTML = "" : "";
     //Füge ein neues Bild als Kind hinzu
-    divEl.appendChild(newImg)
+    divEl.appendChild(newImg);
+
+    let newPName = document.createElement("p");
+    newPName.textContent = `${object.suspect.name}`;
+    divEl.appendChild(newPName);
+
+    let newPDescr = document.createElement("p");
+    newPDescr.textContent = `${object.suspect.description}`;
+    divEl.appendChild(newPDescr);
 
 
 
